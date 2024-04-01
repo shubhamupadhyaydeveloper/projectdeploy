@@ -92,7 +92,7 @@ export default function Signup() {
                             </Box>
                             <Box>
                                 <FormControl id="lastName" isRequired>
-                                    <FormLabel color={"white"}>LastName</FormLabel>
+                                    <FormLabel color={"black"}>LastName</FormLabel>
                                     <Input type="text"
                                         {...register("lastname", { required: "Lastname is reqired" })}
                                     />
@@ -100,7 +100,7 @@ export default function Signup() {
                             </Box>
                         </Flex>
                         <FormControl id="email" isRequired mt={3}>
-                            <FormLabel color={"white"}>Email address</FormLabel>
+                            <FormLabel color={"black"}>Email address</FormLabel>
                             <Input type="email"
                                 {...register("email", { required: "Email is required" })}
                             />
@@ -108,7 +108,7 @@ export default function Signup() {
 
 
                         <FormControl id="domain" isRequired mt={3}>
-                            <FormLabel color={"white"}>Domain</FormLabel>
+                            <FormLabel color={"black"}>Domain</FormLabel>
                             <Input type="text"
                                 {...register("domain", { required: "domain is required" })}
                             />
@@ -116,7 +116,7 @@ export default function Signup() {
 
 
                         <FormControl id="available" isRequired mt={3}>
-                            <FormLabel color={"white"}>Availbale</FormLabel>
+                            <FormLabel color={"black"}>Availbale</FormLabel>
                             <Select placeholder='Select option' {...register('available')}>
                                 <option value='true'>true</option>
                                 <option value='false'>false</option>
@@ -125,7 +125,7 @@ export default function Signup() {
 
 
 
-                        <RadioGroup onChange={setValue} value={value} mt={4} color={"white"}>
+                        <RadioGroup onChange={setValue} value={value} mt={4} color={"black"}>
                             <Stack direction='row'>
                                 <Radio value='male'>male</Radio>
                                 <Radio value='female'>female</Radio>
@@ -139,7 +139,7 @@ export default function Signup() {
                                 size="lg"
                                 bg={'blue.400'}
                                 type='submit'
-                                color={'white'}
+                                color={'black'}
                                 _hover={{
                                     bg: 'blue.500',
                                 }}>

@@ -35,7 +35,7 @@ const Totalteams = () => {
             <Flex gap={5} flexDirection={"column"} alignItems={"center"} justifyContent={"center"} mt={5} >
                 {data?.map(team => (
                     <Link key={team?._id} to={`/teamdetail/${team?._id}`}>
-                        <Box p={4} bg={"white"} width={"300px"} color={"black"} rounded={"md"}>
+                        <Box p={4} border={'0.3px solid black'}  shadow={"xl"}  width={"300px"} color={"black"} rounded={"md"}>
                             <Text>Total members : {team?.members?.length} </Text>
                             {team?.members?.map(member => (
                                 <Flex key={member?._id} mt={2}>

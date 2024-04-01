@@ -73,7 +73,7 @@ export default function Signup() {
         >
             <Box
                 rounded={'lg'}
-               
+                color={'black'}
                 p={8}>
                 <Stack spacing={4}>
                     <form onSubmit={handleSubmit(handleFromSubmit)} >
@@ -83,7 +83,7 @@ export default function Signup() {
                         >
                             <Box>
                                 <FormControl id="firstName" isRequired>
-                                    <FormLabel color={"white"}>FirstName</FormLabel>
+                                    <FormLabel color={"black"}>FirstName</FormLabel>
                                     <Input type="text"
                                         {...register("firstname", { required: "firstname is required" })}
                                     />

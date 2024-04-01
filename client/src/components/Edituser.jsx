@@ -86,7 +86,7 @@ export default function Edituser() {
         >
             <Box
                 rounded={'lg'}
-               
+                color={'black'}
                 p={8}>
                 <Stack spacing={4}>
                     <form onSubmit={handleSubmit(handleFromSubmit)} >
@@ -96,7 +96,7 @@ export default function Edituser() {
                         >
                             <Box>
                                 <FormControl id="firstName" >
-                                    <FormLabel color={"white"}>FirstName</FormLabel>
+                                    <FormLabel color={"black"}>FirstName</FormLabel>
                                     <Input type="text"
                                         defaultValue={data?.firstname}
                                         {...register("firstname", { required: "firstname is required" })}
@@ -106,7 +106,7 @@ export default function Edituser() {
                             </Box>
                             <Box>
                                 <FormControl id="lastName" >
-                                    <FormLabel color={"white"}>LastName</FormLabel>
+                                    <FormLabel color={"black"}>LastName</FormLabel>
                                     <Input type="text"
                                         defaultValue={data?.lastname}
                                         {...register("lastname", { required: "Lastname is reqired" })}
@@ -115,7 +115,7 @@ export default function Edituser() {
                             </Box>
                         </Flex>
                         <FormControl id="email"  mt={3}>
-                            <FormLabel color={"white"}>Email address</FormLabel>
+                            <FormLabel color={"black"}>Email address</FormLabel>
                             <Input type="email"
                                 defaultValue={data?.email}
                                 {...register("email", { required: "Email is required" })}
@@ -124,7 +124,7 @@ export default function Edituser() {
 
 
                         <FormControl id="domain"  mt={3}>
-                            <FormLabel color={"white"}>Domain</FormLabel>
+                            <FormLabel color={"black"}>Domain</FormLabel>
                             <Input type="text"
                                 defaultValue={data?.domain}
                                 {...register("domain", { required: "domain is required" })}
@@ -133,7 +133,7 @@ export default function Edituser() {
 
 
                         <FormControl id="available"  mt={3}>
-                            <FormLabel color={"white"}>Availbale</FormLabel>
+                            <FormLabel color={"black"}>Availbale</FormLabel>
                             <Select placeholder='Select option' {...register('available')} defaultValue={data?.available}>
                                 <option value='true'>true</option>
                                 <option value='false'>false</option>
@@ -147,7 +147,7 @@ export default function Edituser() {
                                 size="lg"
                                 bg={'blue.400'}
                                 type='submit'
-                                color={'white'}
+                                color={'black'}
                                 _hover={{
                                     bg: 'blue.500',
                                 }}>
